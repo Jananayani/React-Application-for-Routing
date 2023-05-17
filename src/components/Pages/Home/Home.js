@@ -6,7 +6,7 @@ import { useState } from "react";
 import { ItemList } from "../../../images/ItemList";
 import './Home.style.css';
 import { useParams } from 'react-router-dom';
-
+import Category from "../../Category";
 
 
 
@@ -22,6 +22,8 @@ const Home = () => {
     return (
         <>
             <div className="card-section">
+                {/* <Category/> */}
+                <div className="side-bar"></div>
                 {ItemList.map((item) => (
                     <div className="card">
                         <div key={item} className="card-image">
@@ -35,9 +37,9 @@ const Home = () => {
                             }
                         </div>
 
-                        {<h5>{item.name}</h5>}
+                        {<p className="item-name-home">{item.name}</p>}
 
-                        {<p>{item.price}</p>}
+                        {<p className="item-price-home">{item.price}</p>}
                     </div>
                 ))}
             </div>

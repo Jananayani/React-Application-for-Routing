@@ -1,0 +1,11 @@
+  .side{
+    display: flex;
+    
+  }
+  
+  .sidebar {
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    /* height: 100%; */
+  }

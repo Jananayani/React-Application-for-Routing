@@ -5,7 +5,7 @@
     list-style: none; /* remove bullets */
       background-color: blueviolet;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-left: 0px;
     margin: auto;
     margin-top: 20px;
@@ -50,6 +50,26 @@
   .links:hover {
     background-color: white;
     color: blueviolet;
-    padding: 20px;
+    /* padding: 20px; */
   }
-  
+
+  .user-buttons{
+    margin-left: 650px;
+ 
+  }
+
+  .user-buttons .sign-in,.sign-up{
+    width:80px;
+    height:30px;
+    margin-left: 10px;
+    border-radius: 10%;
+    
+  }
+
+  .sign-in{
+    background-color: rgb(129, 10, 129);
+    color: white;
+  }
+  .sign-up{
+    
+  }

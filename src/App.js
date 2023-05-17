@@ -7,7 +7,8 @@ import Login from "./components/Login";
 import SearchBar from "./components/SearchBar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Brand from "./components/Pages/Brand";
+// import Brand from "./components/Pages/Brand";
+import Brand from "./components/Brand";
 
 const App = () => {
   const navItems = [

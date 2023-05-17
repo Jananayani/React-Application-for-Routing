@@ -4,8 +4,8 @@ import { faHeadphones } from "@fortawesome/free-solid-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faHandHolding } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Footer.style.css";
+
+import "./css/Footer.style.css";
 library.add(faHeadphones);
 library.add(faGlobe);
 library.add(faClock);

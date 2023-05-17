@@ -1,9 +1,9 @@
 import { useState } from "react";
-import './Dropdown.style.css';
+import './css/Dropdown.style.css';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ImageIcon } from "../images/ImageIcons";
-import { ItemList } from "../images/ItemList";
+
 import { Link } from 'react-router-dom';
  
 const Dropdown = ({ Description }) => {
@@ -12,6 +12,11 @@ const Dropdown = ({ Description }) => {
     const handleOpen = () => {
         setOpen(!open);
     };
+
+    const handleItemClick = () => {
+        setOpen(false);
+    };
+
 
     return (
         <div>
@@ -23,14 +28,14 @@ const Dropdown = ({ Description }) => {
             {open ? (
                 <ul className="menu">
                     <li className="menu-item">
-                        <div className="dropdown-card">
+                        <div className="dropdown-card" onClick={handleItemClick}>
                             
-                            {ItemList.map((item) => (
+                            {ImageIcon.map((item) => (
                                 <div className="dropdown-list">
                                     <div key={item} className="brand-image">
                                         {
                                             <Link key={item} to={`/Home/${item.brand}`}>
-                                                <img src={item.image}alt="images" width="200px"height="300px"
+                                                <img src={item.imageUrl}alt="images" width="200px"height="300px"
                                             ></img>
                                             </Link>
                                             

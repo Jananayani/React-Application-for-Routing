@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import './Header.style.css';
-import { ImageIcon } from '../images/ImageIcons';
+import './css/Header.style.css';
+
 
 import Dropdown from './Dropdown';
-import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { useNavigate } from 'react-router-dom';
 
 
 const Header = ({ navItems }) => {
@@ -21,6 +20,7 @@ const Header = ({ navItems }) => {
     setSearchResults(results);
   };
 
+  const navigate = useNavigate();
   return (
     <div className={`container ${searchResults ? 'search-open' : ''}`}>
     
@@ -37,9 +37,18 @@ const Header = ({ navItems }) => {
               </li>
             ))}
             <Dropdown Description='Brands' />
+            <div className="user-buttons">
+          <button className="sign-in"  type="submit"
+                    onClick={() => {
+                        navigate("/");
+                    }}>Sign In</button>
+          <button className="sign-up">Sign Up</button>
+        </div>
           </ul>
+           
         </nav>
         {/* <SearchBar handleSearch={handleSearch} /> */}
+      
       </header>
       <div className="content">
         {searchResults ? (

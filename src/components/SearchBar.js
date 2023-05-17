@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './SearchBar.style.css';
+import './css/SearchBar.style.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
@@ -15,12 +15,11 @@ const SearchBar = ({ handleSearch }) => {
   const [filteredItems, setFilteredItems] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
 
-  const countries = [
+  const items = [
     { name: "Washing Machine" },
     { name: "Refregirator"},
     { name: "Freezer"},
     { name: "Fan"},
-    { name: "Canada"},
     { name: "Microvave Oven"},
     { name: "Electric Oven"},
     { name: "Electric Iron"},
@@ -34,8 +33,8 @@ const SearchBar = ({ handleSearch }) => {
       setIsSearching(false);
       setFilteredItems([]);
     } else {
-      const filtered = countries.filter((country) => {
-        return country.name
+      const filtered = items.filter((item) => {
+        return item.name
           .toLowerCase()
           .includes(e.target.value.toLowerCase());
       });
