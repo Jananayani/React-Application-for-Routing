@@ -1,0 +1,54 @@
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #555555;
+}
+
+.first-footer {
+  display: flex;
+  align-items: center;
+}
+
+.icon-set {
+  margin-right: 10px;
+}
+
+.support-set {
+  margin-right: 20px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.address h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.about,
+.help,
+.policies {
+  margin-top: 20px;
+}
+
+.about h3,
+.help h3,
+.policies h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about p,
+.help p,
+.policies p {
+  margin-bottom: 5px;
+}

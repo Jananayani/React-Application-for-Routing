@@ -1,0 +1,92 @@
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="search"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 20px;
+    
+  }
+  
+  ul.card {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50px; /* adjust as needed */
+    left: 0;
+    z-index: 999;
+     /* set a high z-index value to bring the element to the front  */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 680px;
+    margin-top: 6px;
+    margin-left: 309px;
+    
+    
+  }
+  
+  ul.card li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  ul.card li:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+
+  .container.search-open {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 999;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .search-container input[type="search"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 700px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+  .search-container .search-button {
+    padding: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: rgb(127, 95, 156);
+  
+  }
+  
+  .search-bar .truck {
+    display: flex;
+    align-items: flex-start;
+    /* position: absolute; */
+    color: purple;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  
+  
